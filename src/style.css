@@ -34,7 +34,8 @@ button {
 }
 
 #name-input:focus,
-#password-input:focus {
+#password-input:focus,
+#email-input:focus {
   outline: 1px solid var(--primary-blue-color);
 }
 
