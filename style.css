@@ -5,3 +5,42 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary-blue-color: hsl(220, 100%, 50%);
+  --secondary-blue-color: hsl(220, 100%, 60%);
+}
+
+label,
+button {
+  margin-left: 10px;
+}
+
+#name-input {
+  margin-top: 10px;
+  margin-left: 23px;
+}
+
+#name-input,
+#password-input {
+  width: 325px;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+
+#name-input:focus,
+#password-input:focus {
+  outline: 1px solid var(--primary-blue-color);
+}
+
+button {
+  padding: 5px 10px;
+  background: var(--primary-blue-color);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  transition: background 0.1s ease;
+  background: var(--secondary-blue-color);
+}

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation Exercise</title>
     <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="error-message"></div>
     <form>
-      <label for="name-input">Name</label>
+      <label for="name-input">Name:</label>
       <input
         type="text"
         name="name"
@@ -20,17 +21,17 @@
       <br />
       <br />
 
-      <label for="password-input">Password</label>
+      <label for="password-input">Password:</label>
       <input
         type="password"
         name="password"
         id="password-input"
-        placeholder="Longer than 6 characters, less than 20 characters, and NOT password"
+        placeholder="> 6 characters, < 20 characters, and NOT 'password'"
       />
 
       <br />
       <br />
-      <button type="submit">Submit</button>
+      <button type="submit">SUBMIT</button>
     </form>
   </body>
 </html>
