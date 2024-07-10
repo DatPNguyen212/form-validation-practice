@@ -21,9 +21,14 @@ button {
   margin-left: 23px;
 }
 
+#email-input {
+  margin-left: 23px;
+}
+
 #name-input,
-#password-input {
-  width: 325px;
+#password-input,
+#email-input {
+  width: 600px;
   padding: 0.25rem;
   font-size: 0.8rem;
 }
@@ -34,6 +39,7 @@ button {
 }
 
 button {
+  margin-top: 10px;
   padding: 5px 10px;
   background: var(--primary-blue-color);
   color: white;

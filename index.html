@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="error-message"></div>
-    <form>
+    <form id="form">
       <label for="name-input">Name:</label>
       <input
         type="text"
         name="name"
         id="name-input"
         required
-        placeholder="Please type your full name"
+        placeholder="Please type your full name in this format: Firstname Lastname"
       />
+      <br />
+      <br />
+
+      <label for="email-input">Email:</label>
+      <input
+        type="text"
+        name="email"
+        id="email-input"
+        placeholder="youremail@email.com or .org or .net or .edu"
+      />
+
       <br />
       <br />
 
@@ -26,11 +36,12 @@
         type="password"
         name="password"
         id="password-input"
-        placeholder="> 6 characters, < 20 characters, and NOT 'password'"
+        placeholder="> 6 characters, <= 20 characters, and NOT 'password', and have atleast 1 SPECIAL CHARACTER"
+        required
       />
 
-      <br />
-      <br />
+      <div id="error-message"></div>
+
       <button type="submit">SUBMIT</button>
     </form>
   </body>
